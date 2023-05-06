@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and CSS Pseudo-classes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+<header>
+   
+    <h1>A-6: Podcast Finder</h1>
+    <h4>Created by Arash Ghezavati</h4>
+
+</header>
+<div class="wrapper">
+    <main>
+        <section>
+
+            <h2>Find a Podcast</h2>
+
+            
+    <!-- search Form -->
+            <form action="https://www.listennotes.com/search/?" method="get">
+             
+              
+
+        <!-- keyword serarch -->
+
+    <div class="col1">
+            <label for="search-text">Keyword:</label>
+        </div>
+        <div class="col2">
+            <input type="text" id="search-text" name="q"  required >
+            
+        </div>
+    
+        <!-- Type drop-down list -->
+      
+    <div class="col1">
+            <label for="select-type">Type:</label>
+        </div>
+        <div class="col2">
+            <select name="select-type" id="select-type" required>
+            <option value="" selected disabled hidden>Select type</option>
+            <option value="episod" >episod</option>
+            <option value="podcast">podcast</option>
+            <option value="curated">curated</option>
+            </select>
+        </div>
+   
+
+
+        <!-- Minimum length -->
+       
+            <div class="col1">
+            <label for="minTime">Minimum length (min):</label >
+            </div>
+                <div class="col2">
+                <input type="number" id="minTime" name="len_min"  min="1" required>
+            </div>
+      
+
+
+        <!-- Maximum length -->
+      
+            <div class="col1">
+            
+        <label for="maxTime">maximum length (min):</label >
+        </div>
+        <div class="col2">
+            <input type="number" id="maxTime" name="len_max" min="1" required>
+        </div>
+ 
+
+            
+
+        <!-- language -->
+      
+            <div class="col1">
+            <label for="language">Language:</label>
+        </div>
+        <div class="col2">
+            <input type="text" id="language" name="language" required>
+        </div>
+    
+
+        <!-- sort radio-button -->
+    
+        <div class="col1"></div>
+  
+    <div class="col2">
+        <fieldset >
+            <legend>Sort by date?</legend>
+           
+            <label for="yes">Yes</label>
+   
+            <input type="radio" id="yes" value="yes" name="sort"> 
+     
+               <label for="no">No</label>
+     
+            <input type="radio" id="no" value="no" name="sort">
+        
+            </fieldset>
+        </div>
+
+        
+<div class="btn">
+        <!-- search button -->
+            <input type="submit"  value="Search">
+
+        <!-- Clear button -->
+            <input type="reset"  value="Clear">
+        
+        </div>
+    </form>
+</section>
+
+    <section>
+
+        <h2>Contact Form</h2>
+
+    <!-- Contact us Form -->
+    <form action="#" method="post">
+
+        <!-- First Name input -->
+        <div class="col1">
+            <label for="first-Name">First Name:</label>
+        </div>
+        <div class="col2">
+            <input type="text" id="first-Name" name="#" placeholder="Firstname" required >
+        </div>
+
+        
+        <!-- Last Name input -->
+        <div class="col1">
+            <label for="last-Name">Last Name:</label>
+        </div>
+        <div class="col2">
+            <input type="text" id="last-Name" name="#" placeholder="Lastname" required >
+        </div>
+
+       <!-- email input -->
+       <div class="col1">
+       <label for="email">Email Address:</label>
+    </div>
+    <div class="col2">
+       <input type="email" id="email" name="#" required >
+    </div>
+
+            <!-- age drop-down list -->
+            <div class="col1">
+            <label for="select-age">Age: </label>
+        </div>
+        <div class="col2">
+            <select name="select-age" id="select-age" required>
+            <option value="" selected disabled hidden>Select your age</option>
+            <option value="under 20" >under 20</option>
+            <option value="20-29">20-29</option>
+            <option value="30-39">30-39</option>
+            <option value="40-49">40-49</option>
+            <option value="50-59">50-59</option>
+            <option value="60-69">60-69</option>
+            <option value="70-79">70-79</option>
+            <option value="80 and up">80 and up</option>
+            </select>    
+        </div>
+            
+            <!-- categories radio-button -->
+         
+        <div class="col1"></div>
+  
+        <div class="col2">
+                <fieldset  >
+                    <legend>Categories you are interested in:</legend>
+
+                    <label  for="crime">True Crime</label>
+                    <input type="radio" id="crime" class="square" value="crime" name="category"> 
+        
+                    <label for="news">News</label>
+                    <input type="radio" id="news" class="square" value="news" name="category">
+
+                    <label for="comedy">Comedy</label>
+                    <input type="radio" id="comedy" class="square" value="comedy" name="category">
+
+                    <label for="it">IT</label>
+                    <input type="radio" id="it" class="square" value="it" name="category">
+
+                    </fieldset>
+                </div>
+                
+
+                    <!-- comment text area -->
+                    
+                    <div class="col1">
+                        <label for="comment">Your feedback to our service:</label>
+                    </div>
+                    <div class="col2">
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <!-- send button -->
+                    <div class="btn">
+            <input type="submit"  value="Send">
+
+            <!-- clear button -->
+                <input type="reset" value="Clear">
+
+            </div>
+       
+    </form>
+</section>
+
+</main>
+
+<footer>
+   2022 Podcast Fun
+</footer>
+
+</div>
+</body>
+</html>
